@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="csx-JC-JaA">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iHS-lf-Wke">
-                                        <rect key="frame" x="0.0" y="0.0" width="341.5" height="748"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="341.5" height="698"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="3aP-NX-Sob"/>
@@ -30,7 +30,7 @@
                                         </connections>
                                     </tableView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cw6-BY-aBP">
-                                        <rect key="frame" x="341.5" y="0.0" width="341" height="748"/>
+                                        <rect key="frame" x="341.5" y="0.0" width="341" height="698"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="Uha-cB-ll4"/>
@@ -38,7 +38,7 @@
                                         </connections>
                                     </tableView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fmu-B3-Plk">
-                                        <rect key="frame" x="682.5" y="0.0" width="341.5" height="748"/>
+                                        <rect key="frame" x="682.5" y="0.0" width="341.5" height="698"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="Guk-ge-bOf"/>
@@ -47,11 +47,25 @@
                                     </tableView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOe-1P-F90">
+                                <rect key="frame" x="873" y="726" width="51" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="ofs-FF-ex8"/>
+                                </constraints>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="onUpdateButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8y-Dg-rnE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="csx-JC-JaA" secondAttribute="bottom" id="6Nk-7A-OZR"/>
+                            <constraint firstItem="NOe-1P-F90" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="6Eg-qq-GuG"/>
+                            <constraint firstAttribute="bottom" secondItem="csx-JC-JaA" secondAttribute="bottom" constant="50" id="6Nk-7A-OZR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NOe-1P-F90" secondAttribute="bottom" constant="12" id="CIP-dQ-KZf"/>
                             <constraint firstItem="csx-JC-JaA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fNg-eD-U0D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NOe-1P-F90" secondAttribute="trailing" constant="100" id="hx0-Sw-L5F"/>
+                            <constraint firstItem="NOe-1P-F90" firstAttribute="top" secondItem="csx-JC-JaA" secondAttribute="bottom" constant="8" id="luV-Ee-BpO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="csx-JC-JaA" secondAttribute="trailing" id="n8b-Kc-pC4"/>
                             <constraint firstItem="csx-JC-JaA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zBp-gJ-Q7i"/>
                         </constraints>
@@ -61,6 +75,7 @@
                         <outlet property="buyTableView" destination="Cw6-BY-aBP" id="Z1p-V7-Jre"/>
                         <outlet property="matchTableView" destination="Fmu-B3-Plk" id="s7P-xt-7NU"/>
                         <outlet property="sellTableView" destination="iHS-lf-Wke" id="oWo-4f-ogr"/>
+                        <outlet property="updateButton" destination="NOe-1P-F90" id="Bjk-Vs-mf4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

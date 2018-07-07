@@ -26,6 +26,9 @@
 		15DC925B20F1044D009FF02A /* BackendApiImplNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC925A20F1044D009FF02A /* BackendApiImplNetworkTests.swift */; };
 		15DC925D20F109CE009FF02A /* HundredOrders.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC925C20F109CD009FF02A /* HundredOrders.json */; };
 		15DC925F20F10A90009FF02A /* OneOrder.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC925E20F10A8F009FF02A /* OneOrder.json */; };
+		15DC926120F11C48009FF02A /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926020F11C48009FF02A /* Match.swift */; };
+		15DC926320F16907009FF02A /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926220F16907009FF02A /* ModelTests.swift */; };
+		15DC926720F16BAF009FF02A /* BackendApiImplBatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		15DC925A20F1044D009FF02A /* BackendApiImplNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiImplNetworkTests.swift; sourceTree = "<group>"; };
 		15DC925C20F109CD009FF02A /* HundredOrders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HundredOrders.json; sourceTree = "<group>"; };
 		15DC925E20F10A8F009FF02A /* OneOrder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OneOrder.json; sourceTree = "<group>"; };
+		15DC926020F11C48009FF02A /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		15DC926220F16907009FF02A /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiImplBatches.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +116,10 @@
 				15DC922D20F0CA07009FF02A /* LaunchScreen.storyboard */,
 				15DC923020F0CA07009FF02A /* Info.plist */,
 				15DC923620F0D676009FF02A /* Model.swift */,
+				15DC923A20F0D700009FF02A /* Order.swift */,
+				15DC926020F11C48009FF02A /* Match.swift */,
 				15DC923820F0D68A009FF02A /* BackendApiProtocol.swift */,
 				15DC923C20F0D98C009FF02A /* BackendApiImplNetwork.swift */,
-				15DC923A20F0D700009FF02A /* Order.swift */,
 				15DC923E20F0DCC3009FF02A /* NetworkProtocol.swift */,
 				15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */,
 				15DC924220F0EE50009FF02A /* ParserProtocol.swift */,
@@ -127,10 +134,12 @@
 				15DC924E20F0EFDA009FF02A /* Info.plist */,
 				15DC925420F0F011009FF02A /* ParserImplDecodableTests.swift */,
 				15DC925A20F1044D009FF02A /* BackendApiImplNetworkTests.swift */,
+				15DC926220F16907009FF02A /* ModelTests.swift */,
 				15DC925E20F10A8F009FF02A /* OneOrder.json */,
 				15DC925620F0F079009FF02A /* TwoOrders.json */,
 				15DC925C20F109CD009FF02A /* HundredOrders.json */,
 				15DC925820F1021E009FF02A /* NetworkImplFromBundle.swift */,
+				15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */,
 			);
 			path = btccomTests;
 			sourceTree = "<group>";
@@ -247,6 +256,7 @@
 				15DC923B20F0D700009FF02A /* Order.swift in Sources */,
 				15DC924520F0EE61009FF02A /* ParserImplDecodable.swift in Sources */,
 				15DC922720F0CA06009FF02A /* ViewController.swift in Sources */,
+				15DC926120F11C48009FF02A /* Match.swift in Sources */,
 				15DC922520F0CA06009FF02A /* AppDelegate.swift in Sources */,
 				15DC924320F0EE50009FF02A /* ParserProtocol.swift in Sources */,
 			);
@@ -258,7 +268,9 @@
 			files = (
 				15DC925920F1021E009FF02A /* NetworkImplFromBundle.swift in Sources */,
 				15DC925B20F1044D009FF02A /* BackendApiImplNetworkTests.swift in Sources */,
+				15DC926720F16BAF009FF02A /* BackendApiImplBatches.swift in Sources */,
 				15DC925520F0F011009FF02A /* ParserImplDecodableTests.swift in Sources */,
+				15DC926320F16907009FF02A /* ModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

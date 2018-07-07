@@ -8,8 +8,6 @@
 
 import Foundation
 
-// {"id":10,"side":"sell","quantity":13,"price":160}
-
 struct Order : Decodable {
 
     enum Types : String {
@@ -20,7 +18,7 @@ struct Order : Decodable {
 
     let id : Int
     let type : String
-    let quantity : Int
+    var quantity : Int
     let price : Int
 
     func typeEnum() -> Types {
@@ -34,5 +32,11 @@ struct Order : Decodable {
         else {
             return .unknown
         }
+    }
+}
+
+extension Order : Equatable {
+    public static func == (lhs: Order, rhs: Order) -> Bool {
+        return lhs.id == rhs.id && lhs.price == rhs.price && lhs.quantity == rhs.quantity && lhs.type == rhs.type
     }
 }

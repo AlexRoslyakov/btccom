@@ -12,7 +12,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var sellTableView: UITableView!
     @IBOutlet weak var buyTableView: UITableView!
     @IBOutlet weak var matchTableView: UITableView!
+    @IBOutlet weak var updateButton: UIButton!
 
+    @IBAction func onUpdateButtonTouchedUpInside(_ sender: Any) {
+        self.model?.update() {
+            DispatchQueue.main.async {
+                self.sellTableView.reloadData()
+                self.buyTableView.reloadData()
+                self.matchTableView.reloadData()
+            }
+        }
+    }
     var model : Model?
 
     private let defaultTableViewCellIdentifier = "DefaultTableViewCellIdentifier"
@@ -28,17 +38,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.sellTableView.register(UITableViewCell.self, forCellReuseIdentifier: defaultTableViewCellIdentifier)
         self.buyTableView.register(UITableViewCell.self, forCellReuseIdentifier: defaultTableViewCellIdentifier)
         self.matchTableView.register(UITableViewCell.self, forCellReuseIdentifier: defaultTableViewCellIdentifier)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        self.model?.update() {
-            DispatchQueue.main.async {
-                self.sellTableView.reloadData()
-                self.buyTableView.reloadData()
-            }
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,7 +60,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return self.model?.buyOrders.count ?? 0
         }
         else if (tableView == self.matchTableView) {
-            return 0
+            return self.model?.matches.count ?? 0
         }
         else {
              precondition(false, "Unknown UITableView")
@@ -74,19 +73,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if (tableView == self.sellTableView) {
             var text = ""
             if let order = self.model?.sellOrders[indexPath.row] {
-                text = "Sell \(order.id) \(order.quantity) \(order.price)"
+                text = "Sell #\(order.id) - \(order.quantity)x\t\(order.price)"
             }
             cell.textLabel?.text = text
         }
             else if (tableView == self.buyTableView) {
                 var text = ""
                 if let order = self.model?.buyOrders[indexPath.row] {
-                    text = "Buy \(order.id) \(order.quantity) \(order.price)"
+                    text = "Buy #\(order.id) - \(order.quantity)x\t\(order.price)"
                 }
                 cell.textLabel?.text = text
         }
             else if (tableView == self.matchTableView) {
-                cell.textLabel?.text = "Match"
+                var text = ""
+                if let match = self.model?.matches[indexPath.row] {
+                    text = "Match \(match.volume)x\t\(match.price)"
+                }
+            cell.textLabel?.text = text
         }
             else {
                 precondition(false, "Unknown UITableView")
