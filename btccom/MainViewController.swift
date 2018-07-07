@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var sellTableView: UITableView!
     @IBOutlet weak var buyTableView: UITableView!
     @IBOutlet weak var matchTableView: UITableView!
@@ -73,29 +73,44 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if (tableView == self.sellTableView) {
             var text = ""
             if let order = self.model?.sellOrders[indexPath.row] {
-                text = "Sell #\(order.id) - \(order.quantity)x\t\(order.price)"
+                text = ModelDescriptionHelper.textFor(order: order)
             }
             cell.textLabel?.text = text
         }
             else if (tableView == self.buyTableView) {
                 var text = ""
                 if let order = self.model?.buyOrders[indexPath.row] {
-                    text = "Buy #\(order.id) - \(order.quantity)x\t\(order.price)"
+                    text = ModelDescriptionHelper.textFor(order: order)
                 }
                 cell.textLabel?.text = text
         }
             else if (tableView == self.matchTableView) {
                 var text = ""
                 if let match = self.model?.matches[indexPath.row] {
-                    text = "Match \(match.volume)x\t\(match.price)"
+                    text = ModelDescriptionHelper.textFor(match: match)
                 }
-            cell.textLabel?.text = text
+                cell.textLabel?.text = text
         }
             else {
                 precondition(false, "Unknown UITableView")
         }
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        if tableView == self.matchTableView {
+            if let match = self.model?.matches[indexPath.row] {
+                let vc : MatchViewController = self.storyboard?.instantiateViewController(withIdentifier: "MatchViewController") as! MatchViewController
+                vc.match = match
+                vc.modalPresentationStyle = .formSheet
+                self.present(vc, animated: true) {
+                    // nop
+                }
+            }
+        }
     }
 }
 

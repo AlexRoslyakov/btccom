@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15DC922520F0CA06009FF02A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC922420F0CA06009FF02A /* AppDelegate.swift */; };
-		15DC922720F0CA06009FF02A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC922620F0CA06009FF02A /* ViewController.swift */; };
+		15DC922720F0CA06009FF02A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC922620F0CA06009FF02A /* MainViewController.swift */; };
 		15DC922A20F0CA06009FF02A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922820F0CA06009FF02A /* Main.storyboard */; };
 		15DC922C20F0CA07009FF02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922B20F0CA07009FF02A /* Assets.xcassets */; };
 		15DC922F20F0CA07009FF02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922D20F0CA07009FF02A /* LaunchScreen.storyboard */; };
@@ -29,6 +29,8 @@
 		15DC926120F11C48009FF02A /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926020F11C48009FF02A /* Match.swift */; };
 		15DC926320F16907009FF02A /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926220F16907009FF02A /* ModelTests.swift */; };
 		15DC926720F16BAF009FF02A /* BackendApiImplBatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */; };
+		15DC926920F17D31009FF02A /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926820F17D31009FF02A /* MatchViewController.swift */; };
+		15DC926B20F17F99009FF02A /* ModelDescriptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926A20F17F99009FF02A /* ModelDescriptionHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,7 @@
 /* Begin PBXFileReference section */
 		15DC922120F0CA06009FF02A /* btccom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btccom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DC922420F0CA06009FF02A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15DC922620F0CA06009FF02A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15DC922620F0CA06009FF02A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		15DC922920F0CA06009FF02A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15DC922B20F0CA07009FF02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15DC922E20F0CA07009FF02A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		15DC926020F11C48009FF02A /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		15DC926220F16907009FF02A /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiImplBatches.swift; sourceTree = "<group>"; };
+		15DC926820F17D31009FF02A /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		15DC926A20F17F99009FF02A /* ModelDescriptionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDescriptionHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				15DC922420F0CA06009FF02A /* AppDelegate.swift */,
-				15DC922620F0CA06009FF02A /* ViewController.swift */,
+				15DC922620F0CA06009FF02A /* MainViewController.swift */,
+				15DC926820F17D31009FF02A /* MatchViewController.swift */,
 				15DC922820F0CA06009FF02A /* Main.storyboard */,
 				15DC922B20F0CA07009FF02A /* Assets.xcassets */,
 				15DC922D20F0CA07009FF02A /* LaunchScreen.storyboard */,
@@ -124,6 +129,7 @@
 				15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */,
 				15DC924220F0EE50009FF02A /* ParserProtocol.swift */,
 				15DC924420F0EE61009FF02A /* ParserImplDecodable.swift */,
+				15DC926A20F17F99009FF02A /* ModelDescriptionHelper.swift */,
 			);
 			path = btccom;
 			sourceTree = "<group>";
@@ -248,6 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DC926B20F17F99009FF02A /* ModelDescriptionHelper.swift in Sources */,
+				15DC926920F17D31009FF02A /* MatchViewController.swift in Sources */,
 				15DC923920F0D68A009FF02A /* BackendApiProtocol.swift in Sources */,
 				15DC924120F0DD6E009FF02A /* NetworkImplURLSession.swift in Sources */,
 				15DC923D20F0D98C009FF02A /* BackendApiImplNetwork.swift in Sources */,
@@ -255,7 +263,7 @@
 				15DC923F20F0DCC3009FF02A /* NetworkProtocol.swift in Sources */,
 				15DC923B20F0D700009FF02A /* Order.swift in Sources */,
 				15DC924520F0EE61009FF02A /* ParserImplDecodable.swift in Sources */,
-				15DC922720F0CA06009FF02A /* ViewController.swift in Sources */,
+				15DC922720F0CA06009FF02A /* MainViewController.swift in Sources */,
 				15DC926120F11C48009FF02A /* Match.swift in Sources */,
 				15DC922520F0CA06009FF02A /* AppDelegate.swift in Sources */,
 				15DC924320F0EE50009FF02A /* ParserProtocol.swift in Sources */,

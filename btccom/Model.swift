@@ -68,9 +68,9 @@ class Model {
             let sellOrder = self.sellOrders[sellOrderIndex]
             let buyOrder = self.buyOrders[buyOrderIndex]
 
-            let price = (sellOrder.price + buyOrder.price)/2
+            let price = (Decimal(sellOrder.price) + Decimal(buyOrder.price))/Decimal(2)
             let volume = min(sellOrder.quantity,buyOrder.quantity)
-            let match = Match(time: Date(), price: Decimal(price), sellOrder: sellOrder, buyOrder: buyOrder, volume: volume)
+            let match = Match(time: Date(), price: price, sellOrder: sellOrder, buyOrder: buyOrder, volume: volume)
             self.matches.append(match)
 
             if sellOrder.quantity > buyOrder.quantity {
