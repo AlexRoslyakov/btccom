@@ -12,6 +12,14 @@
 		15DC922A20F0CA06009FF02A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922820F0CA06009FF02A /* Main.storyboard */; };
 		15DC922C20F0CA07009FF02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922B20F0CA07009FF02A /* Assets.xcassets */; };
 		15DC922F20F0CA07009FF02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922D20F0CA07009FF02A /* LaunchScreen.storyboard */; };
+		15DC923720F0D676009FF02A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923620F0D676009FF02A /* Model.swift */; };
+		15DC923920F0D68A009FF02A /* BackendApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923820F0D68A009FF02A /* BackendApiProtocol.swift */; };
+		15DC923B20F0D700009FF02A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923A20F0D700009FF02A /* Order.swift */; };
+		15DC923D20F0D98C009FF02A /* BackendApiImplNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923C20F0D98C009FF02A /* BackendApiImplNetwork.swift */; };
+		15DC923F20F0DCC3009FF02A /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923E20F0DCC3009FF02A /* NetworkProtocol.swift */; };
+		15DC924120F0DD6E009FF02A /* NetworkImplURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */; };
+		15DC924320F0EE50009FF02A /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC924220F0EE50009FF02A /* ParserProtocol.swift */; };
+		15DC924520F0EE61009FF02A /* ParserImplDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC924420F0EE61009FF02A /* ParserImplDecodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		15DC922B20F0CA07009FF02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15DC922E20F0CA07009FF02A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15DC923020F0CA07009FF02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15DC923620F0D676009FF02A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		15DC923820F0D68A009FF02A /* BackendApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiProtocol.swift; sourceTree = "<group>"; };
+		15DC923A20F0D700009FF02A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		15DC923C20F0D98C009FF02A /* BackendApiImplNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiImplNetwork.swift; sourceTree = "<group>"; };
+		15DC923E20F0DCC3009FF02A /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImplURLSession.swift; sourceTree = "<group>"; };
+		15DC924220F0EE50009FF02A /* ParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
+		15DC924420F0EE61009FF02A /* ParserImplDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserImplDecodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,14 @@
 				15DC922B20F0CA07009FF02A /* Assets.xcassets */,
 				15DC922D20F0CA07009FF02A /* LaunchScreen.storyboard */,
 				15DC923020F0CA07009FF02A /* Info.plist */,
+				15DC923620F0D676009FF02A /* Model.swift */,
+				15DC923820F0D68A009FF02A /* BackendApiProtocol.swift */,
+				15DC923C20F0D98C009FF02A /* BackendApiImplNetwork.swift */,
+				15DC923A20F0D700009FF02A /* Order.swift */,
+				15DC923E20F0DCC3009FF02A /* NetworkProtocol.swift */,
+				15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */,
+				15DC924220F0EE50009FF02A /* ParserProtocol.swift */,
+				15DC924420F0EE61009FF02A /* ParserImplDecodable.swift */,
 			);
 			path = btccom;
 			sourceTree = "<group>";
@@ -135,8 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DC923920F0D68A009FF02A /* BackendApiProtocol.swift in Sources */,
+				15DC924120F0DD6E009FF02A /* NetworkImplURLSession.swift in Sources */,
+				15DC923D20F0D98C009FF02A /* BackendApiImplNetwork.swift in Sources */,
+				15DC923720F0D676009FF02A /* Model.swift in Sources */,
+				15DC923F20F0DCC3009FF02A /* NetworkProtocol.swift in Sources */,
+				15DC923B20F0D700009FF02A /* Order.swift in Sources */,
+				15DC924520F0EE61009FF02A /* ParserImplDecodable.swift in Sources */,
 				15DC922720F0CA06009FF02A /* ViewController.swift in Sources */,
 				15DC922520F0CA06009FF02A /* AppDelegate.swift in Sources */,
+				15DC924320F0EE50009FF02A /* ParserProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
