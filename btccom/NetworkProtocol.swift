@@ -9,5 +9,5 @@
 import Foundation
 
 protocol NetworkProtocol {
-    func fetchDataFromUrl(url : URL, completion: @escaping (Data?) -> Void)
+    func fetchDataFrom(url : URL, completion: @escaping (Data?) -> Void)
 }

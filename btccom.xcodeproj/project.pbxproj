@@ -20,7 +20,23 @@
 		15DC924120F0DD6E009FF02A /* NetworkImplURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */; };
 		15DC924320F0EE50009FF02A /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC924220F0EE50009FF02A /* ParserProtocol.swift */; };
 		15DC924520F0EE61009FF02A /* ParserImplDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC924420F0EE61009FF02A /* ParserImplDecodable.swift */; };
+		15DC925520F0F011009FF02A /* ParserImplDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC925420F0F011009FF02A /* ParserImplDecodableTests.swift */; };
+		15DC925720F0F079009FF02A /* TwoOrders.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC925620F0F079009FF02A /* TwoOrders.json */; };
+		15DC925920F1021E009FF02A /* NetworkImplFromBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC925820F1021E009FF02A /* NetworkImplFromBundle.swift */; };
+		15DC925B20F1044D009FF02A /* BackendApiImplNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC925A20F1044D009FF02A /* BackendApiImplNetworkTests.swift */; };
+		15DC925D20F109CE009FF02A /* HundredOrders.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC925C20F109CD009FF02A /* HundredOrders.json */; };
+		15DC925F20F10A90009FF02A /* OneOrder.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC925E20F10A8F009FF02A /* OneOrder.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15DC924F20F0EFDA009FF02A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15DC921920F0CA06009FF02A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15DC922020F0CA06009FF02A;
+			remoteInfo = btccom;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		15DC922120F0CA06009FF02A /* btccom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btccom.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,10 +54,25 @@
 		15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImplURLSession.swift; sourceTree = "<group>"; };
 		15DC924220F0EE50009FF02A /* ParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
 		15DC924420F0EE61009FF02A /* ParserImplDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserImplDecodable.swift; sourceTree = "<group>"; };
+		15DC924A20F0EFD9009FF02A /* btccomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = btccomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15DC924E20F0EFDA009FF02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15DC925420F0F011009FF02A /* ParserImplDecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserImplDecodableTests.swift; sourceTree = "<group>"; };
+		15DC925620F0F079009FF02A /* TwoOrders.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TwoOrders.json; sourceTree = "<group>"; };
+		15DC925820F1021E009FF02A /* NetworkImplFromBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImplFromBundle.swift; sourceTree = "<group>"; };
+		15DC925A20F1044D009FF02A /* BackendApiImplNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiImplNetworkTests.swift; sourceTree = "<group>"; };
+		15DC925C20F109CD009FF02A /* HundredOrders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HundredOrders.json; sourceTree = "<group>"; };
+		15DC925E20F10A8F009FF02A /* OneOrder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OneOrder.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		15DC921E20F0CA06009FF02A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15DC924720F0EFD9009FF02A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				15DC922320F0CA06009FF02A /* btccom */,
+				15DC924B20F0EFD9009FF02A /* btccomTests */,
 				15DC922220F0CA06009FF02A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				15DC922120F0CA06009FF02A /* btccom.app */,
+				15DC924A20F0EFD9009FF02A /* btccomTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +121,20 @@
 			path = btccom;
 			sourceTree = "<group>";
 		};
+		15DC924B20F0EFD9009FF02A /* btccomTests */ = {
+			isa = PBXGroup;
+			children = (
+				15DC924E20F0EFDA009FF02A /* Info.plist */,
+				15DC925420F0F011009FF02A /* ParserImplDecodableTests.swift */,
+				15DC925A20F1044D009FF02A /* BackendApiImplNetworkTests.swift */,
+				15DC925E20F10A8F009FF02A /* OneOrder.json */,
+				15DC925620F0F079009FF02A /* TwoOrders.json */,
+				15DC925C20F109CD009FF02A /* HundredOrders.json */,
+				15DC925820F1021E009FF02A /* NetworkImplFromBundle.swift */,
+			);
+			path = btccomTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +155,24 @@
 			productReference = 15DC922120F0CA06009FF02A /* btccom.app */;
 			productType = "com.apple.product-type.application";
 		};
+		15DC924920F0EFD9009FF02A /* btccomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15DC925120F0EFDA009FF02A /* Build configuration list for PBXNativeTarget "btccomTests" */;
+			buildPhases = (
+				15DC924620F0EFD9009FF02A /* Sources */,
+				15DC924720F0EFD9009FF02A /* Frameworks */,
+				15DC924820F0EFD9009FF02A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15DC925020F0EFDA009FF02A /* PBXTargetDependency */,
+			);
+			name = btccomTests;
+			productName = btccomTests;
+			productReference = 15DC924A20F0EFD9009FF02A /* btccomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -120,6 +185,10 @@
 				TargetAttributes = {
 					15DC922020F0CA06009FF02A = {
 						CreatedOnToolsVersion = 9.4;
+					};
+					15DC924920F0EFD9009FF02A = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 15DC922020F0CA06009FF02A;
 					};
 				};
 			};
@@ -137,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				15DC922020F0CA06009FF02A /* btccom */,
+				15DC924920F0EFD9009FF02A /* btccomTests */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +219,16 @@
 				15DC922F20F0CA07009FF02A /* LaunchScreen.storyboard in Resources */,
 				15DC922C20F0CA07009FF02A /* Assets.xcassets in Resources */,
 				15DC922A20F0CA06009FF02A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15DC924820F0EFD9009FF02A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15DC925720F0F079009FF02A /* TwoOrders.json in Resources */,
+				15DC925F20F10A90009FF02A /* OneOrder.json in Resources */,
+				15DC925D20F109CE009FF02A /* HundredOrders.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +252,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15DC924620F0EFD9009FF02A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15DC925920F1021E009FF02A /* NetworkImplFromBundle.swift in Sources */,
+				15DC925B20F1044D009FF02A /* BackendApiImplNetworkTests.swift in Sources */,
+				15DC925520F0F011009FF02A /* ParserImplDecodableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15DC925020F0EFDA009FF02A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15DC922020F0CA06009FF02A /* btccom */;
+			targetProxy = 15DC924F20F0EFDA009FF02A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		15DC922820F0CA06009FF02A /* Main.storyboard */ = {
@@ -346,6 +444,46 @@
 			};
 			name = Release;
 		};
+		15DC925220F0EFDA009FF02A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6R6A44F3F;
+				INFOPLIST_FILE = btccomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexroslyakov.btccomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/btccom.app/btccom";
+			};
+			name = Debug;
+		};
+		15DC925320F0EFDA009FF02A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6R6A44F3F;
+				INFOPLIST_FILE = btccomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexroslyakov.btccomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/btccom.app/btccom";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -363,6 +501,15 @@
 			buildConfigurations = (
 				15DC923420F0CA07009FF02A /* Debug */,
 				15DC923520F0CA07009FF02A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15DC925120F0EFDA009FF02A /* Build configuration list for PBXNativeTarget "btccomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15DC925220F0EFDA009FF02A /* Debug */,
+				15DC925320F0EFDA009FF02A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

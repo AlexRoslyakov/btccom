@@ -12,23 +12,23 @@ import Foundation
 
 struct Order : Decodable {
 
-    enum Sides : String {
+    enum Types : String {
         case sell
         case buy
         case unknown
     }
 
     let id : Int
-    let side : String
+    let type : String
     let quantity : Int
     let price : Int
 
-    func sideType() -> Sides {
-        if (side == Sides.sell.rawValue) {
+    func typeEnum() -> Types {
+        if (type == Types.sell.rawValue) {
             return .sell
         }
         else
-        if (side == Sides.buy.rawValue) {
+        if (type == Types.buy.rawValue) {
             return .buy
         }
         else {

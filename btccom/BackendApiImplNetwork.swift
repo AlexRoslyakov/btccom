@@ -22,7 +22,7 @@ class BackendApiImplNetwork : BackendApiProtocol {
         guard let url = URL(string: "\(serverUrl)listOrders/?start=\(start)&size=\(size)") else {
             precondition(false, "Failed to generate URL")
         }
-        self.network.fetchDataFromUrl(url: url) { (data) in
+        self.network.fetchDataFrom(url: url) { (data) in
             guard let data = data else {
                 completion(nil)
                 return

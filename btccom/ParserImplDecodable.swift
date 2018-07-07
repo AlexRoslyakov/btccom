@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ParserImplDecodable {
+class ParserImplDecodable : ParserProtocol {
     func parseOrders(data : Data) -> [Order]? {
         let decoder = JSONDecoder()
         if let orders = try? decoder.decode([Order].self, from: data) {
