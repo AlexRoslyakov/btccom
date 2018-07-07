@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ModelDescriptionHelper {
+class DescriptionHelper {
     static func textFor(order : Order) -> String {
         return "\(order.type) #\(order.id) - \(order.quantity)x\t\(order.price)"
     }

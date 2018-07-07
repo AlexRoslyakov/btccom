@@ -73,21 +73,21 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if (tableView == self.sellTableView) {
             var text = ""
             if let order = self.model?.sellOrders[indexPath.row] {
-                text = ModelDescriptionHelper.textFor(order: order)
+                text = DescriptionHelper.textFor(order: order)
             }
             cell.textLabel?.text = text
         }
             else if (tableView == self.buyTableView) {
                 var text = ""
                 if let order = self.model?.buyOrders[indexPath.row] {
-                    text = ModelDescriptionHelper.textFor(order: order)
+                    text = DescriptionHelper.textFor(order: order)
                 }
                 cell.textLabel?.text = text
         }
             else if (tableView == self.matchTableView) {
                 var text = ""
                 if let match = self.model?.matches[indexPath.row] {
-                    text = ModelDescriptionHelper.textFor(match: match)
+                    text = DescriptionHelper.textFor(match: match)
                 }
                 cell.textLabel?.text = text
         }

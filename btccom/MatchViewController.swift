@@ -56,7 +56,7 @@ class MatchViewController: UIViewController {
 
         self.volumeLabel.text = "Volume: \(match.volume)"
         self.priceLabel.text = "Price: \(match.price)"
-        self.sellOrderLabel.text = "Sell Order: \(ModelDescriptionHelper.textFor(order: match.sellOrder))"
-        self.buyOrderLabel.text = "Buy Order: \(ModelDescriptionHelper.textFor(order: match.buyOrder))"
+        self.sellOrderLabel.text = "Sell Order: \(DescriptionHelper.textFor(order: match.sellOrder))"
+        self.buyOrderLabel.text = "Buy Order: \(DescriptionHelper.textFor(order: match.buyOrder))"
     }
 }

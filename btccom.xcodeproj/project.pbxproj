@@ -12,25 +12,25 @@
 		15DC922A20F0CA06009FF02A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922820F0CA06009FF02A /* Main.storyboard */; };
 		15DC922C20F0CA07009FF02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922B20F0CA07009FF02A /* Assets.xcassets */; };
 		15DC922F20F0CA07009FF02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922D20F0CA07009FF02A /* LaunchScreen.storyboard */; };
-		15DC923720F0D676009FF02A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923620F0D676009FF02A /* Model.swift */; };
-		15DC923920F0D68A009FF02A /* BackendApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923820F0D68A009FF02A /* BackendApiProtocol.swift */; };
-		15DC923B20F0D700009FF02A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923A20F0D700009FF02A /* Order.swift */; };
-		15DC923D20F0D98C009FF02A /* BackendApiImplNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923C20F0D98C009FF02A /* BackendApiImplNetwork.swift */; };
-		15DC923F20F0DCC3009FF02A /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC923E20F0DCC3009FF02A /* NetworkProtocol.swift */; };
-		15DC924120F0DD6E009FF02A /* NetworkImplURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */; };
-		15DC924320F0EE50009FF02A /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC924220F0EE50009FF02A /* ParserProtocol.swift */; };
-		15DC924520F0EE61009FF02A /* ParserImplDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC924420F0EE61009FF02A /* ParserImplDecodable.swift */; };
 		15DC925520F0F011009FF02A /* ParserImplDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC925420F0F011009FF02A /* ParserImplDecodableTests.swift */; };
 		15DC925720F0F079009FF02A /* TwoOrders.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC925620F0F079009FF02A /* TwoOrders.json */; };
 		15DC925920F1021E009FF02A /* NetworkImplFromBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC925820F1021E009FF02A /* NetworkImplFromBundle.swift */; };
 		15DC925B20F1044D009FF02A /* BackendApiImplNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC925A20F1044D009FF02A /* BackendApiImplNetworkTests.swift */; };
 		15DC925D20F109CE009FF02A /* HundredOrders.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC925C20F109CD009FF02A /* HundredOrders.json */; };
 		15DC925F20F10A90009FF02A /* OneOrder.json in Resources */ = {isa = PBXBuildFile; fileRef = 15DC925E20F10A8F009FF02A /* OneOrder.json */; };
-		15DC926120F11C48009FF02A /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926020F11C48009FF02A /* Match.swift */; };
 		15DC926320F16907009FF02A /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926220F16907009FF02A /* ModelTests.swift */; };
 		15DC926720F16BAF009FF02A /* BackendApiImplBatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */; };
 		15DC926920F17D31009FF02A /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926820F17D31009FF02A /* MatchViewController.swift */; };
-		15DC926B20F17F99009FF02A /* ModelDescriptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926A20F17F99009FF02A /* ModelDescriptionHelper.swift */; };
+		15DC926B20F17F99009FF02A /* DescriptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926A20F17F99009FF02A /* DescriptionHelper.swift */; };
+		15DC927620F189F0009FF02A /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926D20F189F0009FF02A /* ParserProtocol.swift */; };
+		15DC927720F189F0009FF02A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926E20F189F0009FF02A /* Model.swift */; };
+		15DC927820F189F0009FF02A /* ParserImplDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926F20F189F0009FF02A /* ParserImplDecodable.swift */; };
+		15DC927920F189F0009FF02A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC927020F189F0009FF02A /* Order.swift */; };
+		15DC927A20F189F0009FF02A /* BackendApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC927120F189F0009FF02A /* BackendApiProtocol.swift */; };
+		15DC927B20F189F0009FF02A /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC927220F189F0009FF02A /* Match.swift */; };
+		15DC927C20F189F0009FF02A /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC927320F189F0009FF02A /* NetworkProtocol.swift */; };
+		15DC927D20F189F0009FF02A /* NetworkImplURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC927420F189F0009FF02A /* NetworkImplURLSession.swift */; };
+		15DC927E20F189F0009FF02A /* BackendApiImplNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC927520F189F0009FF02A /* BackendApiImplNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,14 +51,6 @@
 		15DC922B20F0CA07009FF02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15DC922E20F0CA07009FF02A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15DC923020F0CA07009FF02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15DC923620F0D676009FF02A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		15DC923820F0D68A009FF02A /* BackendApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiProtocol.swift; sourceTree = "<group>"; };
-		15DC923A20F0D700009FF02A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		15DC923C20F0D98C009FF02A /* BackendApiImplNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiImplNetwork.swift; sourceTree = "<group>"; };
-		15DC923E20F0DCC3009FF02A /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
-		15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImplURLSession.swift; sourceTree = "<group>"; };
-		15DC924220F0EE50009FF02A /* ParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
-		15DC924420F0EE61009FF02A /* ParserImplDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserImplDecodable.swift; sourceTree = "<group>"; };
 		15DC924A20F0EFD9009FF02A /* btccomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = btccomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DC924E20F0EFDA009FF02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15DC925420F0F011009FF02A /* ParserImplDecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserImplDecodableTests.swift; sourceTree = "<group>"; };
@@ -67,11 +59,19 @@
 		15DC925A20F1044D009FF02A /* BackendApiImplNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiImplNetworkTests.swift; sourceTree = "<group>"; };
 		15DC925C20F109CD009FF02A /* HundredOrders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HundredOrders.json; sourceTree = "<group>"; };
 		15DC925E20F10A8F009FF02A /* OneOrder.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OneOrder.json; sourceTree = "<group>"; };
-		15DC926020F11C48009FF02A /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		15DC926220F16907009FF02A /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiImplBatches.swift; sourceTree = "<group>"; };
 		15DC926820F17D31009FF02A /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
-		15DC926A20F17F99009FF02A /* ModelDescriptionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDescriptionHelper.swift; sourceTree = "<group>"; };
+		15DC926A20F17F99009FF02A /* DescriptionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionHelper.swift; sourceTree = "<group>"; };
+		15DC926D20F189F0009FF02A /* ParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
+		15DC926E20F189F0009FF02A /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		15DC926F20F189F0009FF02A /* ParserImplDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserImplDecodable.swift; sourceTree = "<group>"; };
+		15DC927020F189F0009FF02A /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		15DC927120F189F0009FF02A /* BackendApiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendApiProtocol.swift; sourceTree = "<group>"; };
+		15DC927220F189F0009FF02A /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		15DC927320F189F0009FF02A /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		15DC927420F189F0009FF02A /* NetworkImplURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkImplURLSession.swift; sourceTree = "<group>"; };
+		15DC927520F189F0009FF02A /* BackendApiImplNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendApiImplNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,23 +113,15 @@
 		15DC922320F0CA06009FF02A /* btccom */ = {
 			isa = PBXGroup;
 			children = (
+				15DC926C20F189F0009FF02A /* Model */,
 				15DC922420F0CA06009FF02A /* AppDelegate.swift */,
 				15DC922620F0CA06009FF02A /* MainViewController.swift */,
 				15DC926820F17D31009FF02A /* MatchViewController.swift */,
+				15DC926A20F17F99009FF02A /* DescriptionHelper.swift */,
 				15DC922820F0CA06009FF02A /* Main.storyboard */,
 				15DC922B20F0CA07009FF02A /* Assets.xcassets */,
 				15DC922D20F0CA07009FF02A /* LaunchScreen.storyboard */,
 				15DC923020F0CA07009FF02A /* Info.plist */,
-				15DC923620F0D676009FF02A /* Model.swift */,
-				15DC923A20F0D700009FF02A /* Order.swift */,
-				15DC926020F11C48009FF02A /* Match.swift */,
-				15DC923820F0D68A009FF02A /* BackendApiProtocol.swift */,
-				15DC923C20F0D98C009FF02A /* BackendApiImplNetwork.swift */,
-				15DC923E20F0DCC3009FF02A /* NetworkProtocol.swift */,
-				15DC924020F0DD6E009FF02A /* NetworkImplURLSession.swift */,
-				15DC924220F0EE50009FF02A /* ParserProtocol.swift */,
-				15DC924420F0EE61009FF02A /* ParserImplDecodable.swift */,
-				15DC926A20F17F99009FF02A /* ModelDescriptionHelper.swift */,
 			);
 			path = btccom;
 			sourceTree = "<group>";
@@ -148,6 +140,38 @@
 				15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */,
 			);
 			path = btccomTests;
+			sourceTree = "<group>";
+		};
+		15DC926C20F189F0009FF02A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15DC926E20F189F0009FF02A /* Model.swift */,
+				15DC928020F18A75009FF02A /* Entities */,
+				15DC927F20F18A75009FF02A /* Api */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15DC927F20F18A75009FF02A /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				15DC926D20F189F0009FF02A /* ParserProtocol.swift */,
+				15DC926F20F189F0009FF02A /* ParserImplDecodable.swift */,
+				15DC927320F189F0009FF02A /* NetworkProtocol.swift */,
+				15DC927420F189F0009FF02A /* NetworkImplURLSession.swift */,
+				15DC927120F189F0009FF02A /* BackendApiProtocol.swift */,
+				15DC927520F189F0009FF02A /* BackendApiImplNetwork.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		15DC928020F18A75009FF02A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				15DC927020F189F0009FF02A /* Order.swift */,
+				15DC927220F189F0009FF02A /* Match.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,19 +278,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15DC926B20F17F99009FF02A /* ModelDescriptionHelper.swift in Sources */,
+				15DC927720F189F0009FF02A /* Model.swift in Sources */,
+				15DC927620F189F0009FF02A /* ParserProtocol.swift in Sources */,
+				15DC926B20F17F99009FF02A /* DescriptionHelper.swift in Sources */,
+				15DC927A20F189F0009FF02A /* BackendApiProtocol.swift in Sources */,
+				15DC927E20F189F0009FF02A /* BackendApiImplNetwork.swift in Sources */,
 				15DC926920F17D31009FF02A /* MatchViewController.swift in Sources */,
-				15DC923920F0D68A009FF02A /* BackendApiProtocol.swift in Sources */,
-				15DC924120F0DD6E009FF02A /* NetworkImplURLSession.swift in Sources */,
-				15DC923D20F0D98C009FF02A /* BackendApiImplNetwork.swift in Sources */,
-				15DC923720F0D676009FF02A /* Model.swift in Sources */,
-				15DC923F20F0DCC3009FF02A /* NetworkProtocol.swift in Sources */,
-				15DC923B20F0D700009FF02A /* Order.swift in Sources */,
-				15DC924520F0EE61009FF02A /* ParserImplDecodable.swift in Sources */,
+				15DC927920F189F0009FF02A /* Order.swift in Sources */,
+				15DC927B20F189F0009FF02A /* Match.swift in Sources */,
+				15DC927820F189F0009FF02A /* ParserImplDecodable.swift in Sources */,
+				15DC927C20F189F0009FF02A /* NetworkProtocol.swift in Sources */,
+				15DC927D20F189F0009FF02A /* NetworkImplURLSession.swift in Sources */,
 				15DC922720F0CA06009FF02A /* MainViewController.swift in Sources */,
-				15DC926120F11C48009FF02A /* Match.swift in Sources */,
 				15DC922520F0CA06009FF02A /* AppDelegate.swift in Sources */,
-				15DC924320F0EE50009FF02A /* ParserProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
