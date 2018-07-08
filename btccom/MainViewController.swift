@@ -13,8 +13,37 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var buyTableView: UITableView!
     @IBOutlet weak var matchTableView: UITableView!
     @IBOutlet weak var updateButton: UIButton!
+    @IBOutlet weak var autoUpdateButton: UIButton!
+
+    var timer : Timer?
+
+    @IBAction func onAutomaticUpdateButtonTouchedUpInside(_ sender: Any) {
+        if self.timer != nil {
+            self.timer?.invalidate()
+            self.timer = nil
+
+            self.autoUpdateButton.setTitle("Enable Automatic Updates", for: .normal)
+            self.updateButton.isEnabled = true
+        }
+        else {
+            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimer), userInfo: nil, repeats: true)
+
+            self.autoUpdateButton.setTitle("Disable Automatic Updates", for: .normal)
+            self.updateButton.isEnabled = false
+        }
+    }
+
+    @objc func onTimer() {
+        self.update()
+    }
 
     @IBAction func onUpdateButtonTouchedUpInside(_ sender: Any) {
+        self.update()
+    }
+    var model : Model?
+    var viewModel = ViewModel()
+
+    private func update() {
         self.model?.update() { viewModel in
             DispatchQueue.main.async {
                 self.viewModel = viewModel
@@ -25,8 +54,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         }
     }
-    var model : Model?
-    var viewModel = ViewModel()
 
     private let defaultTableViewCellIdentifier = "DefaultTableViewCellIdentifier"
     
