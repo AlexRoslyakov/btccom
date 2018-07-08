@@ -14,16 +14,18 @@ class Model {
     var lastStartIndex : Int
     let sizeToFetch = 100
 
-    var sellOrders = [Order]()
-    var buyOrders = [Order]()
-    var matches = [Match]()
+    private var sellOrders = [Order]()
+    private var buyOrders = [Order]()
+    private var matches = [Match]()
 
     init(api : BackendApiProtocol) {
+
         self.lastStartIndex = 0
         self.api = api
     }
 
-    func update(completion : @escaping () -> Void) {
+    func update(completion : @escaping (ViewModel) -> Void) {
+        
         self.api.listOrders(start: self.lastStartIndex, size: sizeToFetch) { (orders) in
             guard let orders = orders else {
                 return
@@ -33,10 +35,13 @@ class Model {
 
             self.updateSellOrdersWithNew(orders: orders)
             self.updateBuyOrdersWithNew(orders: orders)
-
             self.updateMatches()
 
-            completion()
+            let viewModel = ViewModel(sellOrders: Array(self.sellOrders.suffix(20)),
+                                      buyOrders: Array(self.buyOrders.suffix(20)),
+                                      matches: Array(self.matches.suffix(30)))
+
+            completion(viewModel)
         }
     }
 
