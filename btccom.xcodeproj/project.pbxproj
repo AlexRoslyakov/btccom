@@ -131,15 +131,12 @@
 		15DC924B20F0EFD9009FF02A /* btccomTests */ = {
 			isa = PBXGroup;
 			children = (
-				15DC924E20F0EFDA009FF02A /* Info.plist */,
 				15DC925420F0F011009FF02A /* ParserImplDecodableTests.swift */,
 				15DC925A20F1044D009FF02A /* BackendApiImplNetworkTests.swift */,
 				15DC926220F16907009FF02A /* ModelTests.swift */,
-				15DC925E20F10A8F009FF02A /* OneOrder.json */,
-				15DC925620F0F079009FF02A /* TwoOrders.json */,
-				15DC925C20F109CD009FF02A /* HundredOrders.json */,
-				15DC925820F1021E009FF02A /* NetworkImplFromBundle.swift */,
-				15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */,
+				15DC928420F19168009FF02A /* JSONs */,
+				15DC928320F19168009FF02A /* Stubs */,
+				15DC924E20F0EFDA009FF02A /* Info.plist */,
 			);
 			path = btccomTests;
 			sourceTree = "<group>";
@@ -175,6 +172,25 @@
 				15DC927220F189F0009FF02A /* Match.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		15DC928320F19168009FF02A /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				15DC925820F1021E009FF02A /* NetworkImplFromBundle.swift */,
+				15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		15DC928420F19168009FF02A /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				15DC925E20F10A8F009FF02A /* OneOrder.json */,
+				15DC925620F0F079009FF02A /* TwoOrders.json */,
+				15DC925C20F109CD009FF02A /* HundredOrders.json */,
+			);
+			path = JSONs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
