@@ -15,8 +15,10 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var updateButton: UIButton!
 
     @IBAction func onUpdateButtonTouchedUpInside(_ sender: Any) {
-        self.model?.update() {
+        self.model?.update() { viewModel in
             DispatchQueue.main.async {
+                self.viewModel = viewModel
+
                 self.sellTableView.reloadData()
                 self.buyTableView.reloadData()
                 self.matchTableView.reloadData()
@@ -24,6 +26,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     var model : Model?
+    var viewModel = ViewModel()
 
     private let defaultTableViewCellIdentifier = "DefaultTableViewCellIdentifier"
     
@@ -54,13 +57,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (tableView == self.sellTableView) {
-            return self.model?.sellOrders.count ?? 0
+            return self.viewModel.sellOrders.count
         }
         else if (tableView == self.buyTableView) {
-            return self.model?.buyOrders.count ?? 0
+            return self.viewModel.buyOrders.count
         }
         else if (tableView == self.matchTableView) {
-            return self.model?.matches.count ?? 0
+            return self.viewModel.matches.count
         }
         else {
              precondition(false, "Unknown UITableView")
@@ -71,25 +74,16 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: defaultTableViewCellIdentifier, for: indexPath)
 
         if (tableView == self.sellTableView) {
-            var text = ""
-            if let order = self.model?.sellOrders[indexPath.row] {
-                text = DescriptionHelper.textFor(order: order)
-            }
-            cell.textLabel?.text = text
+            let order = self.viewModel.sellOrders[indexPath.row]
+            cell.textLabel?.text = DescriptionHelper.textFor(order: order)
         }
             else if (tableView == self.buyTableView) {
-                var text = ""
-                if let order = self.model?.buyOrders[indexPath.row] {
-                    text = DescriptionHelper.textFor(order: order)
-                }
-                cell.textLabel?.text = text
+                let order = self.viewModel.buyOrders[indexPath.row]
+                cell.textLabel?.text = DescriptionHelper.textFor(order: order)
         }
             else if (tableView == self.matchTableView) {
-                var text = ""
-                if let match = self.model?.matches[indexPath.row] {
-                    text = DescriptionHelper.textFor(match: match)
-                }
-                cell.textLabel?.text = text
+                let match = self.viewModel.matches[indexPath.row]
+                cell.textLabel?.text = DescriptionHelper.textFor(match: match)
         }
             else {
                 precondition(false, "Unknown UITableView")
@@ -102,13 +96,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.deselectRow(at: indexPath, animated: true)
 
         if tableView == self.matchTableView {
-            if let match = self.model?.matches[indexPath.row] {
-                let vc : MatchViewController = self.storyboard?.instantiateViewController(withIdentifier: "MatchViewController") as! MatchViewController
-                vc.match = match
-                vc.modalPresentationStyle = .formSheet
-                self.present(vc, animated: true) {
-                    // nop
-                }
+            let match = self.viewModel.matches[indexPath.row]
+
+            let vc : MatchViewController = self.storyboard?.instantiateViewController(withIdentifier: "MatchViewController") as! MatchViewController
+            vc.match = match
+            vc.modalPresentationStyle = .formSheet
+            self.present(vc, animated: true) {
+                // nop
             }
         }
     }

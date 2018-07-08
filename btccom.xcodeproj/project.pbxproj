@@ -31,6 +31,7 @@
 		15DC927C20F189F0009FF02A /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC927320F189F0009FF02A /* NetworkProtocol.swift */; };
 		15DC927D20F189F0009FF02A /* NetworkImplURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC927420F189F0009FF02A /* NetworkImplURLSession.swift */; };
 		15DC927E20F189F0009FF02A /* BackendApiImplNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC927520F189F0009FF02A /* BackendApiImplNetwork.swift */; };
+		15DC928220F18BA9009FF02A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC928120F18BA9009FF02A /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		15DC927320F189F0009FF02A /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		15DC927420F189F0009FF02A /* NetworkImplURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkImplURLSession.swift; sourceTree = "<group>"; };
 		15DC927520F189F0009FF02A /* BackendApiImplNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendApiImplNetwork.swift; sourceTree = "<group>"; };
+		15DC928120F18BA9009FF02A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		15DC926C20F189F0009FF02A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				15DC928120F18BA9009FF02A /* ViewModel.swift */,
 				15DC926E20F189F0009FF02A /* Model.swift */,
 				15DC928020F18A75009FF02A /* Entities */,
 				15DC927F20F18A75009FF02A /* Api */,
@@ -284,6 +287,7 @@
 				15DC927A20F189F0009FF02A /* BackendApiProtocol.swift in Sources */,
 				15DC927E20F189F0009FF02A /* BackendApiImplNetwork.swift in Sources */,
 				15DC926920F17D31009FF02A /* MatchViewController.swift in Sources */,
+				15DC928220F18BA9009FF02A /* ViewModel.swift in Sources */,
 				15DC927920F189F0009FF02A /* Order.swift in Sources */,
 				15DC927B20F189F0009FF02A /* Match.swift in Sources */,
 				15DC927820F189F0009FF02A /* ParserImplDecodable.swift in Sources */,
