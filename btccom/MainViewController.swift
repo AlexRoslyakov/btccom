@@ -54,8 +54,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         }
     }
-
-    private let defaultTableViewCellIdentifier = "DefaultTableViewCellIdentifier"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,10 +62,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let network = NetworkImplURLSession()
         let api = BackendApiImplNetwork(network: network, parser: parser)
         self.model = Model(api: api)
-
-        self.sellTableView.register(UITableViewCell.self, forCellReuseIdentifier: defaultTableViewCellIdentifier)
-        self.buyTableView.register(UITableViewCell.self, forCellReuseIdentifier: defaultTableViewCellIdentifier)
-        self.matchTableView.register(UITableViewCell.self, forCellReuseIdentifier: defaultTableViewCellIdentifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -98,25 +92,34 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: defaultTableViewCellIdentifier, for: indexPath)
-
+        let orderCellIdentifier = "OrderCellIdentifier"
         if (tableView == self.sellTableView) {
             let order = self.viewModel.sellOrders[indexPath.row]
-            cell.textLabel?.text = DescriptionHelper.textFor(order: order)
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: orderCellIdentifier, for: indexPath) as? OrderTableViewCell else {
+                preconditionFailure("Unknown type of cell")
+            }
+            cell.orderView.order = order
+            return cell
         }
             else if (tableView == self.buyTableView) {
                 let order = self.viewModel.buyOrders[indexPath.row]
-                cell.textLabel?.text = DescriptionHelper.textFor(order: order)
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: orderCellIdentifier, for: indexPath) as? OrderTableViewCell else {
+                    preconditionFailure("Unknown type of cell")
+                }
+                cell.orderView.order = order
+                return cell
         }
             else if (tableView == self.matchTableView) {
                 let match = self.viewModel.matches[indexPath.row]
-                cell.textLabel?.text = DescriptionHelper.textFor(match: match)
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MatchCellIdentifier", for: indexPath) as? MatchTableViewCell else {
+                preconditionFailure("Unknown type of cell")
+            }
+                cell.matchView.match = match
+                return cell
         }
             else {
                 precondition(false, "Unknown UITableView")
         }
-
-        return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

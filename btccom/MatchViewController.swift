@@ -10,12 +10,9 @@ import UIKit
 
 class MatchViewController: UIViewController {
 
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var volumeLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var sellOrderLabel: UILabel!
-    @IBOutlet weak var buyOrderLabel: UILabel!
-
+    @IBOutlet weak var matchView: MatchView!
+    @IBOutlet weak var sellOrderView: OrderView!
+    @IBOutlet weak var buyOrderView: OrderView!
     
 
     @IBAction func onCloseButtonTouchUpInside(_ sender: Any) {
@@ -50,15 +47,8 @@ class MatchViewController: UIViewController {
             return
         }
 
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .long
-        let timeText = dateFormatter.string(from: match.time)
-        self.timeLabel.text = "Time: \(timeText)"
-
-        self.volumeLabel.text = "Volume: \(match.volume)"
-        self.priceLabel.text = "Price: \(match.price)"
-        self.sellOrderLabel.text = "Sell Order: \(DescriptionHelper.textFor(order: match.sellOrder))"
-        self.buyOrderLabel.text = "Buy Order: \(DescriptionHelper.textFor(order: match.buyOrder))"
+        self.matchView.match = match
+        self.sellOrderView.order = match.sellOrder
+        self.buyOrderView.order = match.buyOrder
     }
 }

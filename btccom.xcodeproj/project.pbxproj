@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1502596B20F2E4BC00D002F9 /* Order.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1502596A20F2E4BC00D002F9 /* Order.xib */; };
+		1502596D20F2E61100D002F9 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502596C20F2E61100D002F9 /* OrderView.swift */; };
+		1502596F20F2E9EB00D002F9 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502596E20F2E9EB00D002F9 /* OrderTableViewCell.swift */; };
+		1502599320F3041D00D002F9 /* Match.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1502599220F3041D00D002F9 /* Match.xib */; };
+		1502599520F304D300D002F9 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502599420F304D300D002F9 /* MatchView.swift */; };
+		1502599720F3063500D002F9 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502599620F3063500D002F9 /* MatchTableViewCell.swift */; };
 		15DC922520F0CA06009FF02A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC922420F0CA06009FF02A /* AppDelegate.swift */; };
 		15DC922720F0CA06009FF02A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC922620F0CA06009FF02A /* MainViewController.swift */; };
 		15DC922A20F0CA06009FF02A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DC922820F0CA06009FF02A /* Main.storyboard */; };
@@ -21,7 +27,6 @@
 		15DC926320F16907009FF02A /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926220F16907009FF02A /* ModelTests.swift */; };
 		15DC926720F16BAF009FF02A /* BackendApiImplBatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */; };
 		15DC926920F17D31009FF02A /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926820F17D31009FF02A /* MatchViewController.swift */; };
-		15DC926B20F17F99009FF02A /* DescriptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926A20F17F99009FF02A /* DescriptionHelper.swift */; };
 		15DC927620F189F0009FF02A /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926D20F189F0009FF02A /* ParserProtocol.swift */; };
 		15DC927720F189F0009FF02A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926E20F189F0009FF02A /* Model.swift */; };
 		15DC927820F189F0009FF02A /* ParserImplDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC926F20F189F0009FF02A /* ParserImplDecodable.swift */; };
@@ -45,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1502596A20F2E4BC00D002F9 /* Order.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Order.xib; sourceTree = "<group>"; };
+		1502596C20F2E61100D002F9 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		1502596E20F2E9EB00D002F9 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		1502599220F3041D00D002F9 /* Match.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Match.xib; sourceTree = "<group>"; };
+		1502599420F304D300D002F9 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		1502599620F3063500D002F9 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		15DC922120F0CA06009FF02A /* btccom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btccom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DC922420F0CA06009FF02A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15DC922620F0CA06009FF02A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +74,6 @@
 		15DC926220F16907009FF02A /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		15DC926620F16BAF009FF02A /* BackendApiImplBatches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApiImplBatches.swift; sourceTree = "<group>"; };
 		15DC926820F17D31009FF02A /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
-		15DC926A20F17F99009FF02A /* DescriptionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionHelper.swift; sourceTree = "<group>"; };
 		15DC926D20F189F0009FF02A /* ParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
 		15DC926E20F189F0009FF02A /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		15DC926F20F189F0009FF02A /* ParserImplDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserImplDecodable.swift; sourceTree = "<group>"; };
@@ -94,6 +104,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1502599820F30A5A00D002F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1502596A20F2E4BC00D002F9 /* Order.xib */,
+				1502596C20F2E61100D002F9 /* OrderView.swift */,
+				1502596E20F2E9EB00D002F9 /* OrderTableViewCell.swift */,
+				1502599220F3041D00D002F9 /* Match.xib */,
+				1502599420F304D300D002F9 /* MatchView.swift */,
+				1502599620F3063500D002F9 /* MatchTableViewCell.swift */,
+			);
+			name = View;
+			path = btccom/View;
+			sourceTree = SOURCE_ROOT;
+		};
 		15DC921820F0CA06009FF02A = {
 			isa = PBXGroup;
 			children = (
@@ -116,11 +140,11 @@
 			isa = PBXGroup;
 			children = (
 				15DC926C20F189F0009FF02A /* Model */,
-				15DC922420F0CA06009FF02A /* AppDelegate.swift */,
+				1502599820F30A5A00D002F9 /* View */,
 				15DC922620F0CA06009FF02A /* MainViewController.swift */,
 				15DC926820F17D31009FF02A /* MatchViewController.swift */,
-				15DC926A20F17F99009FF02A /* DescriptionHelper.swift */,
 				15DC922820F0CA06009FF02A /* Main.storyboard */,
+				15DC922420F0CA06009FF02A /* AppDelegate.swift */,
 				15DC922B20F0CA07009FF02A /* Assets.xcassets */,
 				15DC922D20F0CA07009FF02A /* LaunchScreen.storyboard */,
 				15DC923020F0CA07009FF02A /* Info.plist */,
@@ -276,7 +300,9 @@
 			files = (
 				15DC922F20F0CA07009FF02A /* LaunchScreen.storyboard in Resources */,
 				15DC922C20F0CA07009FF02A /* Assets.xcassets in Resources */,
+				1502596B20F2E4BC00D002F9 /* Order.xib in Resources */,
 				15DC922A20F0CA06009FF02A /* Main.storyboard in Resources */,
+				1502599320F3041D00D002F9 /* Match.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,13 +325,16 @@
 			files = (
 				15DC927720F189F0009FF02A /* Model.swift in Sources */,
 				15DC927620F189F0009FF02A /* ParserProtocol.swift in Sources */,
-				15DC926B20F17F99009FF02A /* DescriptionHelper.swift in Sources */,
+				1502596F20F2E9EB00D002F9 /* OrderTableViewCell.swift in Sources */,
 				15DC927A20F189F0009FF02A /* BackendApiProtocol.swift in Sources */,
 				15DC927E20F189F0009FF02A /* BackendApiImplNetwork.swift in Sources */,
 				15DC926920F17D31009FF02A /* MatchViewController.swift in Sources */,
 				15DC928220F18BA9009FF02A /* ViewModel.swift in Sources */,
 				15DC927920F189F0009FF02A /* Order.swift in Sources */,
+				1502599720F3063500D002F9 /* MatchTableViewCell.swift in Sources */,
 				15DC927B20F189F0009FF02A /* Match.swift in Sources */,
+				1502599520F304D300D002F9 /* MatchView.swift in Sources */,
+				1502596D20F2E61100D002F9 /* OrderView.swift in Sources */,
 				15DC927820F189F0009FF02A /* ParserImplDecodable.swift in Sources */,
 				15DC927C20F189F0009FF02A /* NetworkProtocol.swift in Sources */,
 				15DC927D20F189F0009FF02A /* NetworkImplURLSession.swift in Sources */,
